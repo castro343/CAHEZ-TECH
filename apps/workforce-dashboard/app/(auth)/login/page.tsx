@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { AuthForm } from "@/components/auth-form";
+export default function LoginPage(){return <main className="shell"><header className="topbar"><Link className="brand" href="/"><span className="brand-mark">C</span><span>CAHEZ<small>AI WORKFORCE</small></span></Link><Link className="top-link" href="/signup">Create account</Link></header><section className="auth-wrap"><div className="auth-story"><span className="eyebrow">SECURE WORKSPACE ACCESS</span><h1>Good to have you <em style={{color:"var(--cyan)"}}>back.</em></h1><p>Your business operations, AI employees and team workspace — all in one place.</p></div><div className="auth-card"><AuthForm mode="login"/></div></section></main>}
