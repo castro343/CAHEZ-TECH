@@ -22,6 +22,12 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
   ]);
 
   const rows = (memberships ?? []) as Membership[];
+  const orgIds = rows.map((membership) => membership.org_id);
+  let agentCount = 0;
+  if (orgIds.length) {
+    const { count } = await supabase.from("agents").select("id", { count: "exact", head: true }).in("org_id", orgIds);
+    agentCount = count ?? 0;
+  }
   const displayName = profile?.display_name || String(claimsData?.claims?.email ?? "there").split("@")[0];
   const errorMessage = params.error === "workspace-name" ? "Workspace name must be between 2 and 120 characters." : params.error === "workspace-create" ? "We could not create that workspace. Check the name and try again." : "";
 
@@ -41,7 +47,7 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
         <div className="welcome"><div><span className="eyebrow">YOUR OPERATIONS, INTELLIGENTLY CONNECTED</span><h1>Welcome, {displayName}</h1><p>Here is the starting point for your CAHEZ AI Workforce.</p></div></div>
         <div className="stat-grid">
           <article className="stat-card"><span>BUSINESS WORKSPACES</span><strong>{rows.length}</strong></article>
-          <article className="stat-card"><span>AI EMPLOYEES</span><strong>{rows.length ? "View" : "0"}</strong></article>
+          <article className="stat-card"><span>AI EMPLOYEES</span><strong>{agentCount}</strong></article>
           <article className="stat-card"><span>OPEN CONVERSATIONS</span><strong>0</strong></article>
         </div>
         <div className="section-actions"><h2 className="section-title">Your workspaces</h2><Link className="inline-link" href="/dashboard/agents">Manage AI employees →</Link></div>
