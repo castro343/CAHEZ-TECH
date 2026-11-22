@@ -22,6 +22,33 @@ export async function createWorkspace(formData: FormData) {
   redirect("/dashboard");
 }
 
+export async function createAgent(formData: FormData) {
+  const orgId = String(formData.get("org_id") ?? "").trim();
+  const name = String(formData.get("name") ?? "").trim();
+  const agentType = String(formData.get("agent_type") ?? "").trim();
+  const description = String(formData.get("description") ?? "").trim();
+
+  if (!orgId || name.length < 2 || name.length > 120) redirect("/dashboard/agents?error=agent-input");
+  const allowedTypes = ["front_desk", "sales", "support", "research", "operations", "custom"];
+  if (!allowedTypes.includes(agentType)) redirect("/dashboard/agents?error=agent-type");
+
+  const supabase = await createClient();
+  const { data: claimsData } = await supabase.auth.getClaims();
+  if (!claimsData?.claims?.sub) redirect("/login");
+
+  const { error } = await supabase.rpc("create_agent", {
+    p_org_id: orgId,
+    p_name: name,
+    p_agent_type: agentType,
+    p_description: description || null
+  });
+
+  if (error) redirect("/dashboard/agents?error=agent-create");
+  revalidatePath("/dashboard");
+  revalidatePath("/dashboard/agents");
+  redirect("/dashboard/agents?created=1");
+}
+
 export async function signOut() {
   const supabase = await createClient();
   await supabase.auth.signOut();
