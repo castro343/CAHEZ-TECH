@@ -33,7 +33,7 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
     <div className="dashboard">
       <aside className="sidebar">
         <span className="side-label">WORKSPACE</span><Link className="side-link active" href="/dashboard">Overview</Link>
-        <span className="side-label">YOUR AI WORKFORCE</span><span className="side-link">AI Employees · Coming next</span>
+        <span className="side-label">YOUR AI WORKFORCE</span><Link className="side-link" href="/dashboard/agents">AI Employees</Link>
         <span className="side-link">Conversations · Coming next</span><span className="side-link">Knowledge · Coming next</span>
         <span className="side-label">MANAGEMENT</span><span className="side-link">Team · Coming next</span><span className="side-link">Settings · Coming next</span>
       </aside>
@@ -41,10 +41,10 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
         <div className="welcome"><div><span className="eyebrow">YOUR OPERATIONS, INTELLIGENTLY CONNECTED</span><h1>Welcome, {displayName}</h1><p>Here is the starting point for your CAHEZ AI Workforce.</p></div></div>
         <div className="stat-grid">
           <article className="stat-card"><span>BUSINESS WORKSPACES</span><strong>{rows.length}</strong></article>
-          <article className="stat-card"><span>AI EMPLOYEES</span><strong>0</strong></article>
+          <article className="stat-card"><span>AI EMPLOYEES</span><strong>{rows.length ? "View" : "0"}</strong></article>
           <article className="stat-card"><span>OPEN CONVERSATIONS</span><strong>0</strong></article>
         </div>
-        <h2 className="section-title">Your workspaces</h2>
+        <div className="section-actions"><h2 className="section-title">Your workspaces</h2><Link className="inline-link" href="/dashboard/agents">Manage AI employees →</Link></div>
         {rows.length ? <div className="workspace-list">{rows.map((membership) => {
           const org = Array.isArray(membership.organizations) ? membership.organizations[0] : membership.organizations;
           return <article className="workspace-row" key={membership.org_id}><div><strong>{org?.name ?? "Business workspace"}</strong><small>{org?.slug ?? membership.org_id}</small></div><span className="pill">{membership.role.toUpperCase()}</span></article>;
