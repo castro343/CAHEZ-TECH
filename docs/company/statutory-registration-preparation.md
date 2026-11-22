@@ -7,7 +7,7 @@
 **Ownership decision:** One founder; sole initial shareholder.  
 **Registered office / headquarters:** Bungoma County, Bungoma town (proposed); exact registered-office physical/postal address to be confirmed by founder before filing.
 
-> This pack is an operational checklist, not legal, tax, accounting or investment advice. BRS-generated forms and current legislation control. Do not sign or submit inaccurate information. Have a Kenyan advocate or qualified company secretary/accountant review the final capital and constitutional documents.
+> This pack is an operational checklist, not legal, tax, accounting or investment advice. BRS-generated forms and current legislation control. BRS's published forms list identifies CR8 as the director's residential-address notice and CR16 as the notice of change of the company's registered-office location. Do not sign or submit inaccurate information. Have a Kenyan advocate or qualified company secretary/accountant review the final capital and constitutional documents.
 
 ## 1. Incorporation profile
 
@@ -82,7 +82,7 @@ Prepare:
 Use the live eCitizen Companies Registry workflow and generated forms. BRS lists the following relevant forms:
 - **CR1** — application to register a company.
 - **CR2** — model memorandum for a company with share capital.
-- **CR8** — notice of registered office / director residential address information as presented in the current filing workflow.
+- **CR8** — notice of a director's residential address or change of that address (not the company's registered office). The registered office particulars are supplied in the incorporation application as required by the live BRS workflow; **CR16** is the form for a later change of the company's registered-office location.
 - **Statement of nominal capital** — generated/required in the registration process.
 - **BOF1 / beneficial ownership register filing** — confirm the current portal's exact form and timing.
 - **Articles of association** — adopt applicable model articles or have tailored articles reviewed.
