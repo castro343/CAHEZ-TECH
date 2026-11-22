@@ -4,6 +4,17 @@
 **Planning branch:** docs/cahez-company-and-product-blueprint  
 **Status:** Planning artifacts being established. No production app or database has been deployed by this document.
 
+## Confirmed founder configuration and setup snapshot
+
+- Proposed headquarters: Bungoma town, Bungoma County, Kenya. Exact registered-office address remains pending.
+- Sole founder and sole initial shareholder.
+- Proposed nominal share capital: KES 1,000, subject to professional review and BRS filing confirmation.
+- Commercial divisions: CAHEZ AI Workforce and CAHEZ Automation Solutions, built on one shared platform.
+- Domain: undecided. Vercel availability search on 23 November 2026 showed cahez.com and caheztechnologies.com available at USD 12.03/year each; cahez.tech at USD 7.99 first year and USD 49 renewal. No domain has been purchased.
+- Vercel project created: cahez-corporate (project ID prj_TLzz5UQedK3sxs0AXGjc5d45wGYV), linked to castro343/CAHEZ-TECH with root directory apps/corporate-website.
+- Website source PR: https://github.com/castro343/CAHEZ-TECH/pull/8. The first Vercel build was initiated from feature/cahez-corporate-website-v1 and was still building at the last check; no successful production release has been verified.
+- Company/product blueprint PR: https://github.com/castro343/CAHEZ-TECH/pull/7.
+
 ## Delivery strategy
 
 Build the company website and shared product foundation together. Deliver a thin end-to-end pilot before expanding breadth. CAHEZ AI Workforce and CAHEZ Automation Solutions share identity, tenancy, knowledge, permissions, tools, audit, billing and integrations.
