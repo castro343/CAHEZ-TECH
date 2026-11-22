@@ -6,7 +6,9 @@ on:
       - "apps/workforce-dashboard/**"
       - ".github/workflows/cahez-workforce-dashboard-ci.yml"
   push:
-    branches: [main]
+    branches:
+      - main
+      - feature/cahez-workforce-dashboard-auth
     paths:
       - "apps/workforce-dashboard/**"
       - ".github/workflows/cahez-workforce-dashboard-ci.yml"
