@@ -5,7 +5,7 @@
 **Public brand:** CAHEZ TECHNOLOGIES.  
 **Proposed entity:** Kenyan private company limited by shares.  
 **Ownership decision:** One founder; sole initial shareholder.  
-**Registered office / headquarters:** Kenya; exact county, town and physical/postal address to be confirmed by founder before filing.
+**Registered office / headquarters:** Bungoma County, Bungoma town (proposed); exact registered-office physical/postal address to be confirmed by founder before filing.
 
 > This pack is an operational checklist, not legal, tax, accounting or investment advice. BRS-generated forms and current legislation control. Do not sign or submit inaccurate information. Have a Kenyan advocate or qualified company secretary/accountant review the final capital and constitutional documents.
 
@@ -20,7 +20,7 @@
 | Initial ownership | 100% of issued ordinary shares held by founder |
 | Directors | Founder proposed as initial director; eligibility and particulars to be checked in eCitizen |
 | Company secretary | Determine whether required under current Companies Act thresholds and actual capital; do not appoint unnecessarily or omit if legally required |
-| Registered office | Kenyan physical registered office; exact address pending |
+| Registered office | Bungoma town, Bungoma County; exact physical/postal address pending |
 | Principal business | AI systems, automation, software engineering, technology research and related services |
 | Financial year | Select with accountant; proposed 31 December year-end is a planning assumption, not a filing instruction |
 | Share capital | Modest; final nominal capital, number of shares and nominal value to be agreed after professional review |
@@ -38,7 +38,7 @@
 
 ## 3. Share capital and ownership worksheet
 
-The user has approved a modest initial share-capital approach, but has not approved a precise amount or share denomination.
+The founder has selected KES 1,000 as the proposed modest initial nominal share-capital figure. This remains subject to Kenyan professional review and confirmation in the live BRS filing. The founder has not yet confirmed share count or nominal value per share.
 
 Recommended structure to evaluate with a Kenyan professional:
 - One class of ordinary shares initially.
@@ -52,10 +52,10 @@ Recommended structure to evaluate with a Kenyan professional:
 
 | Item to confirm | Value |
 |---|---|
-| Total nominal share capital | Pending professional review |
+| Total nominal share capital | KES 1,000 proposed; pending professional review and filing confirmation |
 | Share class | Ordinary (proposed) |
-| Number of shares issued at incorporation | Pending |
-| Nominal value per share | Pending |
+| Number of shares issued at incorporation | Pending professional review |
+| Nominal value per share | Pending professional review |
 | Founder allocation | 100% of issued shares |
 | Amount paid on each share | Pending |
 | Amount unpaid, if any | Pending |
@@ -140,10 +140,10 @@ Immediately after incorporation:
 
 ## 9. Open items before filing
 
-- [ ] Confirm exact registered-office county, town and address.
+- [x] Proposed headquarters county/town confirmed: Bungoma County, Bungoma town.\n- [ ] Confirm exact registered-office physical/postal address.
 - [ ] Run BRS name search and reserve approved name.
 - [ ] Run KIPI trademark clearance for word mark, logo and slogan.
-- [ ] Confirm final share capital and paid-up amount with Kenyan professional.
+- [ ] Confirm KES 1,000 proposed nominal share capital, share count, nominal value and paid-up amount with Kenyan professional.
 - [ ] Confirm director/secretary requirements and eligibility.
 - [ ] Confirm articles/model articles.
 - [ ] Complete official eCitizen forms directly; do not share personal identity details in chat.
