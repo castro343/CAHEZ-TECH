@@ -60,7 +60,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="closing-cta"><div className="container closing-inner"><span className="eyebrow">LET'S BUILD WHAT'S NEXT</span><h2>Have a challenge worth solving?</h2><p>Tell us what your organisation is trying to achieve. Let's explore the right way to engineer it.</p><Link className="button button-light" href="/contact">Start a conversation <span>↗</span></Link></div></section>
+      <section className="closing-cta"><div className="container closing-inner"><span className="eyebrow">LET&apos;S BUILD WHAT&apos;S NEXT</span><h2>Have a challenge worth solving?</h2><p>Tell us what your organisation is trying to achieve. Let&apos;s explore the right way to engineer it.</p><Link className="button button-light" href="/contact">Start a conversation <span>↗</span></Link></div></section>
     </>
   );
 }
