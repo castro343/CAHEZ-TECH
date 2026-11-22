@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { AuthForm } from "@/components/auth-form";
+export default function ForgotPasswordPage(){return <main className="shell"><header className="topbar"><Link className="brand" href="/"><span className="brand-mark">C</span><span>CAHEZ<small>AI WORKFORCE</small></span></Link><Link className="top-link" href="/login">Sign in</Link></header><section className="auth-wrap"><div className="auth-story"><span className="eyebrow">ACCOUNT RECOVERY</span><h1>Let’s get you <em style={{color:"var(--cyan)"}}>back in.</em></h1><p>Request a one-time password reset link using the email address on your account.</p></div><div className="auth-card"><AuthForm mode="recovery"/></div></section></main>}
