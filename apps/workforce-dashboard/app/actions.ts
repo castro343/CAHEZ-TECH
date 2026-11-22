@@ -10,9 +10,12 @@ export async function createWorkspace(formData: FormData) {
 
   const supabase = await createClient();
   const { data: claimsData } = await supabase.auth.getClaims();
-  if (!claimsData?.claims?.sub) redirect("/login");
+  const userId = claimsData?.claims?.sub;
+  if (!userId) redirect("/login");
 
-  const slug = name.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 48);
+  const base = name.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) || "workspace";
+  const suffix = String(userId).replace(/-/g, "").slice(0, 8);
+  const slug = `${base}-${suffix}`;
   const { error } = await supabase.rpc("create_organization", { p_name: name, p_slug: slug });
   if (error) redirect("/dashboard?error=workspace-create");
   revalidatePath("/dashboard");
